@@ -11,10 +11,6 @@
 
 <br/>
 
-#源码
-https://github.com/fashare2015/DependencyBehavior
-<br/>
-
 #分析
 实现就不说了，只是定义一个`DependencyBehavior`，简单的实现了两个回调：
 
