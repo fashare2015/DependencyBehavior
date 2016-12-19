@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.fashare.dependencybehavior.MainActivity">
+
+    <TextView
+        android:id="@+id/Object"
+        android:text="Object"
+        android:layout_marginTop="250dp"
+        style="@style/tv_gray"/>
+
+    <!-- ? extends List-->
+    <TextView
+        android:id="@+id/List"
+        app:layout_behavior="@string/dependency"
+        app:mDependencyId="@id/Object"
+        app:mIsTopOfCenter="true"
+        app:mMarginCenter="100dp"
+        android:text="List"
+        style="@style/tv_blue"/>
+
+    <TextView
+        android:id="@+id/ArrayList"
+        app:layout_behavior="@string/dependency"
+        app:mDependencyId="@id/List"
+        app:mIsTopOfCenter="true"
+        android:text="ArrayList"
+        style="@style/tv_blue"/>
+
+    <TextView
+        android:id="@+id/LinkedList"
+        app:layout_behavior="@string/dependency"
+        app:mDependencyId="@id/List"
+        android:text="LinkedList"
+        style="@style/tv_blue"/>
+    <!-- ? extends List-->
+
+    <!-- ? extends Map-->
+    <TextView
+        android:id="@+id/Map"
+        app:layout_behavior="@string/dependency"
+        app:mDependencyId="@id/Object"
+        app:mMarginCenter="100dp"
+        android:text="Map"
+        style="@style/tv_pink"/>
+
+    <TextView
+        android:id="@+id/HashMap"
+        app:layout_behavior="@string/dependency"
+        app:mDependencyId="@id/Map"
+        app:mIsTopOfCenter="true"
+        android:text="HashMap"
+        style="@style/tv_pink"/>
+
+    <TextView
+        android:id="@+id/TreeMap"
+        app:layout_behavior="@string/dependency"
+        app:mDependencyId="@id/Map"
+        android:text="TreeMap"
+        style="@style/tv_pink"/>
+    <!-- ? extends Map-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DependencyBehavior</string>
+    <string name="dependency">com.fashare.dependencybehavior.DependencyBehavior</string>
+</resources>
