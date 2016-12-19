@@ -7,6 +7,7 @@
 #效果图
 这是一个模仿`java继承关系`的例子，定义了一个`DependencyBehavior`来描述`继承关系`。
 即`A extends B`代表`A DependsOn B`，我拖动`B`时，`A`也会跟着动：
+
 ![这里写图片描述](http://img.blog.csdn.net/20161220003827139?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTE1MzYxNDEzMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 <br/>
