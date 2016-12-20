@@ -38,6 +38,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
 
 ###建图
 `A DependsOn B`可以用一条边表示，代码中方向为`B -> A`，也可以反过来建图，得到的拓扑序相反而已，其他没区别。那我们按照`B -> A`来建一下图：
+
 ![这里写图片描述](http://img.blog.csdn.net/20161220074425003?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYTE1MzYxNDEzMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 >PS：可以看到，形成了一个树形依赖，其中`Object`的位置决定了所有`TextView`的位置，所以先要确定它。
 >其实，箭头反过来更加自然。而`B -> A`建图，方向是反着的，很别扭。其得到的拓扑序列也是反着的。所以代码里会有一步`翻转列表`: 
